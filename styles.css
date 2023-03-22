@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.page-title {
+  color: rgb(19, 18, 18);
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.add-book {
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+.book-container {
+  width: min(90%, 1000px);
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 280px));
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.card-book {
+  display: grid;
+  grid-template-rows: 4fr 2fr 1fr 1fr 1fr 2fr;
+  padding: 15px;
+  grid-gap: 10px;
+  border: 1px black solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card-icon {
+  background-color: lightgrey;
+}
+
+.card-title {
+  
+}
+
+.delete-book {
+  padding: 1em 1.5em;
+}
+
+
+/* Modal styles */
+
+.modal {
+  width: 90%;
+  max-width: 500px;
+  position: absolute;
+  border: 1px solid black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+.exit-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.add-book-form {
+  margin: 50px auto;
+  width: min(90%, 300px)
+}
+.form-control-container {
+  margin: 1em auto;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.3em;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 1em;
+}
+
+.form-radio-container {
+  display: flex;
+  padding-left: 2em;
+}
+
+.form-radio {
+  margin-left: 10px;
+}
+
+.form-submit {
+  margin-top: 1.5em;
+  padding: 0.7em 2em;
+}

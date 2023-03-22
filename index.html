@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="page-title">Your Book Library</h1>
+    <button class="add-book" onclick="toggleModal()">Add Book To Library</button>
+    <div class="book-container">
+    </div>
+    <div class="modal hidden">
+      <div class="exit-modal" onclick="toggleModal()">
+        <img src="images/reject.png">
+      </div>
+      <form class="add-book-form" method="" action="" onsubmit="submitForm(event)">
+        <div class="form-control-container">
+          <label for="title">Title</label>
+          <input class="form-control" id="title" type="text" name="title" placeholder="Harry Potter" required>
+        </div>
+        <div class="form-control-container">
+          <label for="author">Author</label>
+          <input class="form-control" id="author" type="text" name="author" placeholder="J.K Rowling" required>
+        </div>
+        <div class="form-control-container">
+          <label for="pages">Pages</label>
+        <input class="form-control" id="pages" type="number" name="pages" placeholder="456" required>
+        </div>
+        <feildset>
+          <legend>Have you read this book?</legend>
+          <div class="flex-container">
+            <div class="form-radio-container">
+              <label for="yes">Yes</label>
+              <input class="form-radio" id="yes" type="radio" name="book-read" value="true" required>
+            </div>
+            <div class="form-radio-container">
+              <label for="no">No</label>
+              <input class="form-radio" id="no" type="radio" name="book-read" value="false">
+            </div>
+          </div>
+        </feildset>
+        <button type="submit" class="form-submit">Submit</button>
+      </form>
+    </div> 
+  </body>
+</html>
